@@ -37,6 +37,7 @@ PUR='\033[0;35m' # purple
 NoC='\033[0m'    # no color
 
 #initialize submodules
+sudo apt-get install toilet -y
 toilet "Downloading git submodules" || echo -e "${PUR}Downloading git submodules${NoC}"
 git submodule update --init --recursive
 
